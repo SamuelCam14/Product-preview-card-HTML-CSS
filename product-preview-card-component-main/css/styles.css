@@ -1,0 +1,250 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+/* font-family: 'Fraunces', serif; */
+
+:root {
+    --primary-color: #3c8067;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+* button {
+    cursor: pointer;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* IMG Article */
+
+section.pcard-preview {
+    background-color: #fff;
+    width: 600px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden; /* keeps the image inside the container */
+
+}
+
+section figure.image-product {
+    width: 50%;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+section figure.image-product img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Product Info */
+
+section.product-info {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+section div.product-info {
+    width: 80%;
+}
+
+section div.product-info h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: hsl(228, 12%, 48%);
+    margin: 0;
+    letter-spacing: 4px;
+}
+
+section div.product-info h1 {
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+section div.product-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    margin: 0;
+    font-weight: 500;
+}
+
+section div.product-info div.product-prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+
+section div.product-info div.product-prices h3 {
+    font-family: 'Fraunces', sans-serif;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+section div.product-info div.product-prices p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through hsl(228, 12%, 48%);
+}
+
+section div.product-info button {
+    border: 0;
+    background-color: var(--primary-color);
+    color: white;
+    width: 100%;
+    padding: 15px 72px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section div.product-info button:hover {
+    border: 0;
+    background-color: #2f6653;
+    color: white;
+    width: 100%;
+    padding: 15px 72px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* MOBILE DESIGN */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    /* IMG Article */
+
+section.pcard-preview {
+    width: 90%;
+    height: 90vh;
+    display: block;
+    margin: 0 auto;
+}
+
+section figure.image-product {
+    width: 100%;
+    height: 40%;
+}
+
+/* Product Info */
+
+section.product-info {
+    width: 100%;
+    height: 60%;
+}
+
+section div.product-info {
+    width: 80%;
+}
+
+section div.product-info div.product-prices {
+    justify-content: flex-start;
+}
+
+section div.product-info div.product-prices h3 {
+    margin-right: 10px;    
+}
+
+section div.product-info button {
+    justify-content: center;
+}
+
+section div.product-info button:hover {
+    justify-content: center;
+}
+
+section div.product-info button img {
+    margin-right: 10px;
+}
+
+section div.product-info button img:hover {
+    margin-right: 10px;
+}
+}
+
+/* Mobile Design 375px */
+
+@media screen and (max-width: 375px) {
+        /* IMG Article */
+
+section.pcard-preview {
+    width: 90%;
+    height: 90vh;
+    display: block;
+    margin: 0 auto;
+}
+
+section figure.image-product {
+    width: 100%;
+    height: 40%;
+}
+
+/* Product Info */
+
+section.product-info {
+    width: 100%;
+    height: 60%;
+}
+
+section div.product-info {
+    width: 80%;
+}
+
+div.product-info h1.product-name {
+    margin: 10px 0;
+}
+
+section div.product-info div.product-prices {
+    justify-content: flex-start;
+}
+
+section div.product-info div.product-prices h3 {
+    margin: 10px;
+    margin-right: 10px;
+}
+
+section div.product-info button {
+    justify-content: center;
+}
+
+section div.product-info button:hover {
+    justify-content: center;
+}
+
+section div.product-info button img {
+    margin-right: 10px;
+}
+
+section div.product-info button img:hover {
+    margin-right: 10px;
+}
+
+}
